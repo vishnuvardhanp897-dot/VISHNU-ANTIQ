@@ -3,12 +3,12 @@
 */
 
 const PRODUCTS = [
-  { id:1, title:"Ancient Roman Coin — 500 BC Edition", price:12000, category:"coins", img:"https://images.unsplash.com/photo-1525159831894-2d1a9cd7f72b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b9b0f0c5f2b2cd5feca6a8b9b0f7c1d" },
-  { id:2, title:"Carved Stone Vessel — Mughal Replica", price:8500, category:"vessels", img:"https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7de8b8c0d7c8f0a9c5d6b6aa9d2b3f90" },
-  { id:3, title:"Bronze Temple Figure", price:17500, category:"figures", img:"https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8a2e7b6f7f2c4b3a1a4b5c6d7e8f9a1b" },
-  { id:4, title:"Miniature Monument Replica", price:2400, category:"decor", img:"https://images.unsplash.com/photo-1549893075-7b1c5b8f7c3a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d" },
-  { id:5, title:"Vintage Oil Lamp", price:1800, category:"decor", img:"https://images.unsplash.com/photo-1481014474333-e7b720bb3f39?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f" },
-  { id:6, title:"Colonial Wooden Chest (Restored)", price:9200, category:"furniture", img:"https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d" }
+  { id:1, title:"Ancient Roman Coin — 500 BC Edition", price:12000, category:"coins", img:"https://static.toiimg.com/thumb/imgsize-112492,msid-64005594,width-400,resizemode-4/64005594.jpg" },
+  { id:2, title:"Carved Stone Vessel — Mughal Replica", price:8500, category:"vessels", img:"https://www.indianartvilla.in/cdn/shop/files/ALs6j_FZJiA7Tq-eT7zs88uzeRZgICY1yhM1pH0odZ8cmMi6LxXEazJ4Q7wV7ui_oUVwx0CD_fyM_EuedwJcN_AsZchTZyGPXoZlQRvEb9o2L8qo2FK3jYmggklb1Kl2z560aWXC7RqVONU_zdKCKhhm4ugK0MHncB_72lF_L_SSBZpVI9-O8wj_540x.jpg?v=1756531806" },
+  { id:3, title:"Bronze Temple Figure", price:17500, category:"figures", img:"https://www.indianartvilla.in/cdn/shop/files/ALs6j_FZJiA7Tq-eT7zs88uzeRZgICY1yhM1pH0odZ8cmMi6LxXEazJ4Q7wV7ui_oUVwx0CD_fyM_EuedwJcN_AsZchTZyGPXoZlQRvEb9o2L8qo2FK3jYmggklb1Kl2z560aWXC7RqVONU_zdKCKhhm4ugK0MHncB_72lF_L_SSBZpVI9-O8wj_540x.jpg?v=1756531806" },
+  { id:4, title:"Miniature Monument Replica", price:2400, category:"decor", img:"https://bhimoneedecor.com/cdn/shop/products/41xrE0uE1eL.jpg?v=1679984757" },
+  { id:5, title:"Vintage Oil Lamp", price:1800, category:"decor", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIrw7s9Yj74PXK9w7IO07g98F673iWnNL9w&s" },
+  { id:6, title:"Colonial Wooden Chest (Restored)", price:9200, category:"furniture", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTTl3_RSoSzKT-Hrljr-xVKq2bbBtdIBPj5K-GbALUMIT7NRMEH2SxcWMRrwa1NJFH8A&usqp=CAU" }
 ];
 
 const CART_KEY = 'vag_cart';
