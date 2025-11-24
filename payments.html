@@ -1,68 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payments</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vishnu's Antiq Gallary — Antiq Pieces</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-<h1>Vishnu's Antiq Gallary</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="products.html">Antiq Pieces</a>
-<a href="payments.html">Payments</a>
-<a href="thankyou.html">Thank You</a>
-</nav>
-</header>
+<body class="page-products">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-main">Vishnu's</span>
+        <span class="brand-sub">Antiq Gallary</span>
+      </a>
 
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Antiq Pieces</a>
+        <a href="payments.html" class="nav-link">Payments</a>
+        <a href="thankyou.html" class="nav-link">Thank You</a>
+        <button class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
 
-<section class="payment-container">
-<h2>Complete Your Booking</h2>
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1 class="section-title">Antique & Historic Pieces</h1>
+        <p class="section-lead">A curated selection from different eras — coins, vessels, figures, decor and more.</p>
+      </div>
 
+      <div class="controls">
+        <input id="search" class="search" placeholder="Search antiques (coin, vase, bronze)..." />
+        <select id="category" class="select">
+          <option value="all">All Categories</option>
+          <option value="coins">Coins</option>
+          <option value="vessels">Vessels</option>
+          <option value="figures">Figures</option>
+          <option value="decor">Decor</option>
+          <option value="furniture">Furniture</option>
+        </select>
+      </div>
 
-<form id="paymentForm" onsubmit="submitOrder(event)">
-<label>Full Name</label>
-<input type="text" required>
+      <div id="products-grid" class="grid grid-3 mt-lg">
+        <!-- product cards rendered by main.js -->
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year-products"></span> Vishnu's Antiq Gallary</div>
+      <div class="muted">Heritage Lane, Old City • Shipping worldwide</div>
+    </div>
+  </footer>
 
-<label>Phone</label>
-<input type="text" required>
-
-
-<label>Email</label>
-<input type="email" required>
-
-
-<label>Address</label>
-<input type="text" required>
-
-
-<label>City / State</label>
-<input type="text" required>
-
-
-<label>Payment Mode</label>
-<div class="radio-box">
-<input type="radio" name="pay" required> UPI
-<input type="radio" name="pay" required> Net Banking
-<input type="radio" name="pay" required> Card Payment
-</div>
-
-
-<h3>Order Summary</h3>
-<div id="orderSummary"></div>
-
-
-<button type="submit" class="btn">Confirm Order</button>
-</form>
-</section>
-
-
-<footer>
-<p>© 2025 Vishnu's Antiq Gallary | Contact: info@vishnuantiqs.com</p>
-</footer>
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
