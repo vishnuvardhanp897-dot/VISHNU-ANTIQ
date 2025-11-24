@@ -1,0 +1,71 @@
+<!doctype html>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Checkout</h1>
+<form id="payment-form">
+<div class="form-row">
+<label for="name">Full name</label>
+<input id="name" required />
+</div>
+
+
+<div class="form-row">
+<label for="email">Email</label>
+<input id="email" type="email" required />
+</div>
+
+
+<div class="form-row">
+<label for="address">Address</label>
+<textarea id="address" rows="3" required></textarea>
+</div>
+
+
+<div class="form-row">
+<label for="area">Delivery area</label>
+<select id="area">
+<option value="local">Local (Same city)</option>
+<option value="regional">Regional (Nearby states)</option>
+<option value="national">National (Across India)</option>
+</select>
+</div>
+
+
+<div class="form-row">
+<label>Payment method</label>
+<div class="radio-row">
+<label><input type="radio" name="pay" value="cod" checked /> Cash on Delivery</label>
+<label><input type="radio" name="pay" value="upi" /> UPI</label>
+<label><input type="radio" name="pay" value="card" /> Card</label>
+</div>
+</div>
+
+
+<div class="form-row total-row">
+<strong>Order Total: </strong> <span id="order-total">₹0</span>
+</div>
+
+
+<div class="form-row">
+<button class="btn primary" type="submit">Proceed to Buy</button>
+</div>
+</form>
+</main>
+
+
+<footer class="site-footer container">
+<p>© <span id="year-4"></span> Vishnu's Antiq Gallery</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
