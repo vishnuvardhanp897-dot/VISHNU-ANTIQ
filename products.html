@@ -1,51 +1,70 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Products — Vishnu's Antiq Gallery</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vishnu's Antiq Gallary — Antiq Pieces</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="site-header">
-<div class="container">
-<a class="brand" href="index.html">Vishnu's Antiq Gallery</a>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-</nav>
-</div>
-</header>
+<body class="page-products">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a href="index.html" class="brand">
+          <span class="brand-main">Vishnu's</span>
+          <span class="brand-sub">Antiq Gallary</span>
+        </a>
+      </div>
 
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Antiq Pieces</a>
+        <a href="payments.html" class="nav-link">Payments</a>
+        <a href="thankyou.html" class="nav-link">Thank You</a>
+        <button id="cart-toggle-2" class="cart-btn">Cart (<span id="cart-count-2">0</span>)</button>
+      </nav>
+    </div>
+  </header>
 
-<main class="container">
-<section class="products-header">
-<h1>All Products</h1>
-<div class="controls">
-<input id="search" placeholder="Search products..." />
-<select id="filter-category">
-<option value="all">All Categories</option>
-<option value="statue">Statues</option>
-<option value="vase">Vases</option>
-<option value="clock">Clocks</option>
-<option value="furniture">Furniture</option>
-</select>
-</div>
-</section>
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1 class="section-title">Antique & Historic Pieces</h1>
+        <p class="section-lead">Explore a carefully curated gallery of relics, reproductions, and museum-quality pieces.</p>
+      </div>
 
+      <div class="controls">
+        <input id="search" type="search" class="search" placeholder="Search antiques (e.g., coin, vase, bronze)..." />
+        <select id="category" class="select">
+          <option value="all">All Categories</option>
+          <option value="coins">Coins</option>
+          <option value="vessels">Vessels</option>
+          <option value="figures">Figures</option>
+          <option value="furniture">Furniture</option>
+          <option value="decor">Decor</option>
+        </select>
+      </div>
 
-<section class="grid" id="products-grid">
-<!-- Products are injected by script.js -->
-</section>
-</main>
+      <div id="products-grid" class="grid grid-3 mt-lg">
+        <!-- product cards injected by main.js -->
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <small>© <span id="year-products"></span> Vishnu's Antiq Gallary</small>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="muted">Shipping</a>
+        <a href="#" class="muted">Returns</a>
+      </div>
+    </div>
+  </footer>
 
-<footer class="site-footer container">
-<p>© <span id="year-2"></span> Vishnu's Antiq Gallery</p>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
