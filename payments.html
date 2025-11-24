@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vishnu's Antiq Gallary — Antiq Pieces</title>
+  <title>Vishnu's Antiq Gallary — Checkout</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-products">
+<body class="page-payments">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
@@ -18,8 +18,8 @@
 
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="products.html" class="nav-link active">Antiq Pieces</a>
-        <a href="payments.html" class="nav-link">Payments</a>
+        <a href="products.html" class="nav-link">Antiq Pieces</a>
+        <a href="payments.html" class="nav-link active">Payments</a>
         <a href="thankyou.html" class="nav-link">Thank You</a>
         <button class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
       </nav>
@@ -27,34 +27,88 @@
   </header>
 
   <main class="container">
-    <section class="section">
-      <div class="section-head">
-        <h1 class="section-title">Antique & Historic Pieces</h1>
-        <p class="section-lead">A curated selection from different eras — coins, vessels, figures, decor and more.</p>
+    <section class="checkout-grid">
+      <div class="checkout-form card">
+        <h2>Checkout & Booking</h2>
+        <p class="muted">This is a simulated checkout. No real payment is taken.</p>
+
+        <form id="checkout-form" class="form">
+          <div class="form-row">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+91 9XXXXXXXXX" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="example@domain.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required placeholder="Shipping & delivery address"></textarea>
+          </div>
+
+          <div class="form-row split">
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" required />
+            </div>
+            <div>
+              <label for="state">State</label>
+              <input id="state" name="state" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Payment Mode</label>
+            <div class="radio-row">
+              <label><input type="radio" name="paymentMode" value="cod" checked /> Cash on Delivery</label>
+              <label><input type="radio" name="paymentMode" value="upi" /> UPI</label>
+              <label><input type="radio" name="paymentMode" value="card" /> Card</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary fullwidth">Proceed to Buy</button>
+          </div>
+        </form>
       </div>
 
-      <div class="controls">
-        <input id="search" class="search" placeholder="Search antiques (coin, vase, bronze)..." />
-        <select id="category" class="select">
-          <option value="all">All Categories</option>
-          <option value="coins">Coins</option>
-          <option value="vessels">Vessels</option>
-          <option value="figures">Figures</option>
-          <option value="decor">Decor</option>
-          <option value="furniture">Furniture</option>
-        </select>
-      </div>
+      <aside class="order-summary card">
+        <h3>Order Summary</h3>
+        <div id="order-items" class="order-items muted">
+          <!-- injected by main.js -->
+        </div>
 
-      <div id="products-grid" class="grid grid-3 mt-lg">
-        <!-- product cards rendered by main.js -->
-      </div>
+        <div class="summary-row">
+          <strong>Subtotal</strong>
+          <span id="summary-subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <strong>Shipping</strong>
+          <span id="summary-shipping">₹0</span>
+        </div>
+        <div class="summary-row total">
+          <strong>Total</strong>
+          <span id="summary-total">₹0</span>
+        </div>
+
+        <div class="mt-md">
+          <button id="clear-cart-pay" class="btn btn-outline fullwidth">Clear Cart</button>
+        </div>
+      </aside>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>© <span id="year-products"></span> Vishnu's Antiq Gallary</div>
-      <div class="muted">Heritage Lane, Old City • Shipping worldwide</div>
+      <div>© <span id="year-payments"></span> Vishnu's Antiq Gallary</div>
+      <div class="muted">Secure packing • Insured shipping</div>
     </div>
   </footer>
 
