@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SF3YXNLPZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SF3YXNLPZT');
-</script>
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5N6THDN4');</script>
+<!-- End Google Tag Manager -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vishnu's Antiq Gallary — Antiq Pieces</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-products">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N6THDN4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
         <span class="brand-main">Vishnu's</span>
         <span class="brand-sub">Antiq Gallary</span>
       </a>
-
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="products.html" class="nav-link active">Antiq Pieces</a>
@@ -34,14 +34,12 @@
       </nav>
     </div>
   </header>
-
   <main class="container">
     <section class="section">
       <div class="section-head">
         <h1 class="section-title">Antique & Historic Pieces</h1>
         <p class="section-lead">A curated selection from different eras — coins, vessels, figures, decor and more.</p>
       </div>
-
       <div class="controls">
         <input id="search" class="search" placeholder="Search antiques (coin, vase, bronze)..." />
         <select id="category" class="select">
@@ -53,20 +51,17 @@
           <option value="furniture">Furniture</option>
         </select>
       </div>
-
       <div id="products-grid" class="grid grid-3 mt-lg">
         <!-- product cards rendered by main.js -->
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year-products"></span> Vishnu's Antiq Gallary</div>
       <div class="muted">Heritage Lane, Old City • Shipping worldwide</div>
     </div>
   </footer>
-
   <script src="main.js"></script>
 </body>
 </html>
