@@ -1,77 +1,149 @@
 <!doctype html>
-<h1>ANTIQ MONUMENTS &amp; HISTORIC PIECES</h1>
-<p>Hand-picked antiques and tasteful replicas, curated for collectors and interiors.</p>
-<a class="btn primary" href="products.html">Browse Collections</a>
-</div>
-<div class="hero-image">
-<img src="https://via.placeholder.com/540x360?text=Antique+Chest" alt="Antique chest">
-</div>
-</div>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vishnu's Antiq Gallary — Home</title>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-<section class="featured container">
-<h2>Featured Picks</h2>
-<div class="grid">
-<article class="card">
-<img src="https://via.placeholder.com/320x220?text=Bronze+Statue" alt="Bronze Statue">
-<div class="card-body">
-<h3>Bronze Temple Statue</h3>
-<p class="muted">Circa 19th century replica</p>
-<div class="card-actions">
-<span class="price">₹4,500</span>
-<a class="btn" href="products.html">View</a>
-</div>
-</div>
-</article>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-home">
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a href="index.html" class="brand">
+          <span class="brand-main">Vishnu's</span>
+          <span class="brand-sub">Antiq Gallary</span>
+        </a>
+      </div>
 
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Antiq Pieces</a>
+        <a href="payments.html" class="nav-link">Payments</a>
+        <a href="thankyou.html" class="nav-link">Thank You</a>
+        <button id="cart-toggle" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
 
-<article class="card">
-<img src="https://via.placeholder.com/320x220?text=Carved+Vase" alt="Carved Vase">
-<div class="card-body">
-<h3>Carved Stone Vase</h3>
-<p class="muted">Hand-polished finish</p>
-<div class="card-actions">
-<span class="price">₹3,200</span>
-<a class="btn" href="products.html">View</a>
-</div>
-</div>
-</article>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title">Vishnu's Antiq Gallary</h1>
+        <h2 class="hero-sub">Preserving History, One Artifact at a Time</h2>
+        <p class="hero-desc">
+          Discover curated antiques and historic pieces from across eras — artifacts with stories, provenance,
+          and a timeless charm. Restored with care and offered with certification.
+        </p>
 
+        <div class="hero-cta">
+          <a href="products.html" class="btn btn-primary">Browse Antiqs</a>
+          <a href="payments.html" class="btn btn-outline">Book Now</a>
+        </div>
 
-<article class="card">
-<img src="https://via.placeholder.com/320x220?text=Antique+Clock" alt="Antique Clock">
-<div class="card-body">
-<h3>Victorian Mantel Clock</h3>
-<p class="muted">Functional, restored</p>
-<div class="card-actions">
-<span class="price">₹6,800</span>
-<a class="btn" href="products.html">View</a>
-</div>
-</div>
-</article>
+        <ul class="features-list">
+          <li><strong>Ancient Originals</strong> — Genuine pieces & authenticated replicas.</li>
+          <li><strong>Rare Historic Pieces</strong> — Carefully sourced & restored.</li>
+          <li><strong>Certified Collections</strong> — Provenance & care documentation.</li>
+        </ul>
+      </div>
 
+      <div class="hero-right">
+        <!-- gentle paper texture + image -->
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1505735453451-3c7d1f2f7b68?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9e4278d5a8a2b81bbd1a9a9f3bc0f4b8"
+               alt="Vintage artifact on wooden table">
+          <div class="image-overlay">Antique Collection</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-</section>
+  <!-- Featured / Gallery preview -->
+  <section class="container section featured">
+    <h3 class="section-title">Curated Collections</h3>
+    <p class="section-lead">Hand-picked antiques, selected for collectors and interior connoisseurs.</p>
 
+    <div class="grid grid-3">
+      <!-- sample preview cards that link to products -->
+      <article class="card antique-card">
+        <img src="https://via.placeholder.com/440x300?text=Roman+Coin" alt="Roman coin">
+        <div class="card-body">
+          <h4>Ancient Roman Coin — 500 BC Edition</h4>
+          <p class="muted">Rare find — select limited pieces with certificate of authenticity.</p>
+          <div class="card-actions">
+            <span class="price">₹12,000</span>
+            <a href="products.html" class="btn btn-small">View</a>
+          </div>
+        </div>
+      </article>
 
-<section class="about container">
-<h2>About Vishnu's Antiq Gallery</h2>
-<p>We source and restore historical pieces and fine reproductions. Each piece comes with a short provenance and care instructions.</p>
-<a class="btn outline" href="products.html">See All Products</a>
-</section>
-</main>
+      <article class="card antique-card">
+        <img src="https://via.placeholder.com/440x300?text=Stone+Vessel" alt="Stone Vessel">
+        <div class="card-body">
+          <h4>Carved Stone Vessel — Mughal Period Replica</h4>
+          <p class="muted">Hand-finished textures & subtle patina finish.</p>
+          <div class="card-actions">
+            <span class="price">₹8,500</span>
+            <a href="products.html" class="btn btn-small">View</a>
+          </div>
+        </div>
+      </article>
 
+      <article class="card antique-card">
+        <img src="https://via.placeholder.com/440x300?text=Bronze+Figure" alt="Bronze Figure">
+        <div class="card-body">
+          <h4>Bronze Temple Figure</h4>
+          <p class="muted">Restored bronze with original engraving patterns.</p>
+          <div class="card-actions">
+            <span class="price">₹17,500</span>
+            <a href="products.html" class="btn btn-small">View</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<footer class="site-footer">
-<div class="container">
-<p>© <span id="year"></span> Vishnu's Antiq Gallery. All rights reserved.</p>
-<p class="muted">Design by Vishnu V.</p>
-</div>
-</footer>
+  <!-- About / footer CTA -->
+  <section class="container about">
+    <div class="about-grid">
+      <div>
+        <h3>Our Story</h3>
+        <p>
+          Vishnu's Antiq Gallary curates historic artifacts and museum-quality replicas. We restore with respect,
+          document provenance, and ship securely. Explore the past — own a story.
+        </p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p class="muted">
+          Email: <a href="mailto:info@vishnusantiq.com">info@vishnusantiq.com</a><br>
+          Phone: +91 90000 00000<br>
+          Location: Heritage Lane, Old City
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <small>© <span id="year-home"></span> Vishnu's Antiq Gallary — All rights reserved.</small>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="muted">Privacy</a>
+        <a href="#" class="muted">Terms</a>
+        <a href="#" class="muted">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
