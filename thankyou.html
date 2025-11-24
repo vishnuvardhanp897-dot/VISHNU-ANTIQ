@@ -1,62 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vishnu's Antiq Gallary — Thank You</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-thankyou">
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand-block">
-        <a href="index.html" class="brand">
-          <span class="brand-main">Vishnu's</span>
-          <span class="brand-sub">Antiq Gallary</span>
-        </a>
-      </div>
+<body>
+<header>
+<h1>Vishnu's Antiq Gallary</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Antiq Pieces</a>
+<a href="payments.html">Payments</a>
+<a href="thankyou.html">Thank You</a>
+</nav>
+</header>
 
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="products.html" class="nav-link">Antiq Pieces</a>
-        <a href="payments.html" class="nav-link">Payments</a>
-        <a href="thankyou.html" class="nav-link active">Thank You</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container centered">
-    <div class="thank-card card">
-      <h1>Thank You, Rider of History!</h1>
-      <p class="lead">Your Antique Order Has Been Placed.</p>
+<section class="thankyou-box">
+<h2>Thank You!</h2>
+<p>Your Antique Order Has Been Placed</p>
+<p id="orderId"></p>
+<a href="index.html" class="btn">Back to Home</a>
+</section>
 
-      <div class="order-id-block">
-        <span class="muted">Order ID</span>
-        <div id="order-id" class="order-id">—</div>
-      </div>
 
-      <p class="muted">A confirmation email will be sent shortly with shipping & provenance details.</p>
-
-      <div class="mt-lg">
-        <a href="index.html" class="btn btn-outline">Back to Home</a>
-        <a id="view-orders" class="btn btn-primary" href="products.html">Browse More Antiqs</a>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <small>© <span id="year-thank"></span> Vishnu's Antiq Gallary</small>
-      </div>
-      <div class="footer-right">
-        <a href="#" class="muted">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+<footer>
+<p>© 2025 Vishnu's Antiq Gallary | Contact: info@vishnuantiqs.com</p>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
