@@ -1,70 +1,73 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vishnu's Antiq Gallary — Antiq Pieces</title>
+<!DOCTYPE html>
+<a href="payments.html">Payments</a>
+<a href="thankyou.html">Thank You</a>
+</nav>
+</header>
 
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="page-products">
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand-block">
-        <a href="index.html" class="brand">
-          <span class="brand-main">Vishnu's</span>
-          <span class="brand-sub">Antiq Gallary</span>
-        </a>
-      </div>
 
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="products.html" class="nav-link active">Antiq Pieces</a>
-        <a href="payments.html" class="nav-link">Payments</a>
-        <a href="thankyou.html" class="nav-link">Thank You</a>
-        <button id="cart-toggle-2" class="cart-btn">Cart (<span id="cart-count-2">0</span>)</button>
-      </nav>
-    </div>
-  </header>
+<section class="product-grid">
 
-  <main class="container">
-    <section class="section">
-      <div class="section-head">
-        <h1 class="section-title">Antique & Historic Pieces</h1>
-        <p class="section-lead">Explore a carefully curated gallery of relics, reproductions, and museum-quality pieces.</p>
-      </div>
 
-      <div class="controls">
-        <input id="search" type="search" class="search" placeholder="Search antiques (e.g., coin, vase, bronze)..." />
-        <select id="category" class="select">
-          <option value="all">All Categories</option>
-          <option value="coins">Coins</option>
-          <option value="vessels">Vessels</option>
-          <option value="figures">Figures</option>
-          <option value="furniture">Furniture</option>
-          <option value="decor">Decor</option>
-        </select>
-      </div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1549893075-7b1c5b8f7c3a" alt="Roman Coin">
+<h3>Ancient Roman Coin — 500 BC</h3>
+<p>₹4,999</p>
+<button onclick="addToCart('Ancient Roman Coin',4999)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
 
-      <div id="products-grid" class="grid grid-3 mt-lg">
-        <!-- product cards injected by main.js -->
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <small>© <span id="year-products"></span> Vishnu's Antiq Gallary</small>
-      </div>
-      <div class="footer-right">
-        <a href="#" class="muted">Shipping</a>
-        <a href="#" class="muted">Returns</a>
-      </div>
-    </div>
-  </footer>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea" alt="Vintage Vase">
+<h3>Persian Royal Vase — 1600 AD</h3>
+<p>₹14,999</p>
+<button onclick="addToCart('Persian Royal Vase',14999)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
 
-  <script src="main.js"></script>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Sword">
+<h3>Medieval Warrior Sword — 1200 AD</h3>
+<p>₹29,499</p>
+<button onclick="addToCart('Medieval Sword',29499)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1622465517507-d4c2ab0e8621" alt="Statue">
+<h3>Greek Goddess Miniature — 300 BC</h3>
+<p>₹6,999</p>
+<button onclick="addToCart('Greek Goddess Miniature',6999)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1481014474333-e7b720bb3f39" alt="Lamp">
+<h3>Vintage Brass Lamp — 1800s</h3>
+<p>₹3,499</p>
+<button onclick="addToCart('Vintage Brass Lamp',3499)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1478479405421-ce83c92fb3cc" alt="Books">
+<h3>Ancient Manuscript — 1500 AD</h3>
+<p>₹19,999</p>
+<button onclick="addToCart('Ancient Manuscript',19999)">Add to Cart</button>
+<a href="payments.html" class="buy-btn">Buy Now</a>
+</div>
+
+
+</section>
+
+
+<footer>
+<p>© 2025 Vishnu's Antiq Gallary | Contact: info@vishnuantiqs.com</p>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
